@@ -6,7 +6,8 @@ package com.wd.java.concurrent.thread;
 /**
  * 
  * @author ZH-SW-Wudi
- * @date: 2021-4-1 下午8:19:19 <br/> 
+ * @date: 2021-4-1 下午8:19:19 <br/>
+ * 不能重新start，可以在new一个
  *
  */
 public class Test {
