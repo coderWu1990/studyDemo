@@ -21,7 +21,8 @@ public class CountJavaLines {
 
 	public static void main(String[] args) throws IOException {
 //		File file = new File("E:\\Workspace\\AAA_Demo");// 需要统计行数的文件夹路径
-		File file = new File("/home/wud6/Desktop/code/gitCode/CommonUI/javaDemo/src/main/java");// 需要统计行数的文件夹路径
+//		File file = new File("D:\\Android\\WorkPlace\\tclplus_android");// 需要统计行数的文件夹路径
+		File file = new File("D:\\Android\\WorkPlace\\ConfigNetSdk");// 需要统计行数的文件夹路径
 		traverseFiles(file);// 调用递归方法查看.java文件，用于统计行数
 		System.out.println("Java文件个数：" + j);
 		System.out.println("Java代码总行数：" + i);
