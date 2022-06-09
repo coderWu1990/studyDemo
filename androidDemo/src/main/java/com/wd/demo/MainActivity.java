@@ -58,6 +58,11 @@ public class MainActivity extends Activity {
 //		testIdleHandler();
         // initWaterView();
 //		startActivity();
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     private void startActivity() {
