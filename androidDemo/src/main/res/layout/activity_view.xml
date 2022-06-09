@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.wd.demo"
+    android:layout_width="match_parent"
+    android:background="#FFaabbcc"
+    android:layout_height="match_parent">
+
+
+    <com.wd.demo.widget.AttrView
+        android:id="@+id/attr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aabbcc"
+        app:title_bar_title_text="哈哈"
+        app:title_bar_text_color="@android:color/black"
+        app:title_left_icon="@drawable/aaa"
+        app:title_right_icon="@drawable/ic_launcher"
+
+        />
+
+    <com.wd.demo.widget.MyView
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:layout_height="200dp" />
+
+    <com.wd.demo.widget.draw.DynamicHeartView
+        android:id="@+id/dyn_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Test" />
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:text="Test" />
+
+</RelativeLayout>

@@ -225,4 +225,22 @@ public class ByteUtil {
 		System.out.println();
 	}
 
+	/**
+	 * 16进制数组转字节
+	 * @param hex
+	 * @return
+	 */
+	public static byte[] hexTobytes(String hex) {
+		if (hex==null||hex.length() < 1) {
+			return null;
+		} else {
+			hex=hex.replace(" ","");
+			byte[] result = new byte[hex.length() / 2];
+			int j = 0;
+			for(int i = 0; i < hex.length(); i+=2) {
+				result[j++] = (byte)Integer.parseInt(hex.substring(i,i+2), 16);
+			}
+			return result;
+		}
+	}
 }

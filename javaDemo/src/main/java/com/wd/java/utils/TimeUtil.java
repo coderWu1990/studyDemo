@@ -220,4 +220,40 @@ public class TimeUtil {
 		}
 		return "";
 	}
+
+	/**
+	 * 毫秒转成时分秒
+	 * @param time
+	 * @return
+	 */
+	public static String getGapTime(long time){
+		//这里想要只保留分秒可以写成"mm:ss"
+		SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
+		//这里很重要，如果不设置时区的话，输出结果就会是几点钟，而不是毫秒值对应的时分秒数量了。
+		formatter.setTimeZone(TimeZone.getTimeZone("GMT+00:00"));
+		return formatter.format(time);
+	}
+
+	public static String getGapTime2(long time){
+		long hours = time / (1000 * 60 * 60);
+		long minutes = (time-hours*(1000 * 60 * 60 ))/(1000* 60);
+		long second = (time-hours*(1000 * 60 * 60 )-minutes*(1000 * 60 ))/1000;
+		String diffTime="";
+		if (hours<10){
+			diffTime="0"+hours;
+		}else {
+			diffTime=""+hours;
+		}
+		if(minutes<10){
+			diffTime=diffTime+":0"+minutes;
+		}else{
+			diffTime=diffTime+":"+minutes;
+		}
+		if(second<10){
+			diffTime=diffTime+":0"+second;
+		}else{
+			diffTime=diffTime+":"+second;
+		}
+		return diffTime;
+	}
 }

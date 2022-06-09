@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wd.demo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name="com.wd.demo.base.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <activity
+            android:name="com.wd.demo.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wd.demo.eventbus.EventActivity"></activity>
+        <activity android:name="com.wd.demo.eventbus.LoginActivity"></activity>
+        <activity android:name="com.wd.demo.photo.PhotoActivity"></activity>
+        <activity android:name="com.wd.demo.ui.UiTestActivity"></activity>
+        <activity android:name="com.wd.demo.photo.GlideActivity"></activity>
+        <activity android:name="com.wd.demo.activity.MemoryActivity"></activity>
+        <activity android:name="com.wd.demo.db.DbActivity"></activity>
+        <activity android:name="com.wd.demo.activity.AnimationActivity"></activity>
+        <activity android:name="com.wd.demo.activity.ParticleViewActivity"></activity>
+        <activity android:name="com.wd.demo.activity.HandlerActivity"></activity>
+        <activity android:name="com.wd.demo.window.WindowActivity"></activity>
+        <activity android:name="com.wd.demo.t9search.T9Activity"></activity>
+        <activity android:name="com.wd.demo.hook.HookActivity1"></activity>
+
+        <service android:name="com.wd.demo.service.TestService">
+            <intent-filter>
+                <action android:name="com.wd.test.server" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

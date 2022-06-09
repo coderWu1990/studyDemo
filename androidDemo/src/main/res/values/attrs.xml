@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AttrView">
+        <attr name="title_bar_title_text" format="string" />
+        <attr name="title_bar_text_color" format="color|reference" />
+        <attr name="title_left_icon" format="reference" />
+        <attr name="title_right_icon" format="reference" />
+    </declare-styleable>
+
+</resources>

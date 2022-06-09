@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="点击1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="200dp"
+        android:gravity="center"
+        android:text="点击2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <com.wd.demo.widget.water.WaterView
+        android:id="@+id/wv_water"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/tree"
+        android:visibility="gone" />
+
+    <com.wd.demo.widget.surface.SecondSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.wd.demo.widget.surface.SinSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.wd.demo.widget.surface.TrackSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.wd.demo.widget.dispatch.ViewGroupA
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <com.wd.demo.widget.dispatch.ViewGroupB
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wd.demo.widget.dispatch.ViewD
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.wd.demo.widget.dispatch.ViewC
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.wd.demo.widget.dispatch.ViewGroupB>
+    </com.wd.demo.widget.dispatch.ViewGroupA>
+
+    <com.wd.demo.widget.CustomView
+        android:id="@+id/custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
