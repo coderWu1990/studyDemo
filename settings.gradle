@@ -1,3 +1,4 @@
 rootProject.name = "studyDemo"
 include ':javaDemo'
 include ':androidDemo'
+include ':androidDemo2'
