@@ -41,5 +41,7 @@ dependencies {
 
     //内存泄漏检测
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.9.1'
+    //检测生命周期，自动销毁
+    api 'com.uber.autodispose:autodispose-android-archcomponents:1.4.0'
 
 }
