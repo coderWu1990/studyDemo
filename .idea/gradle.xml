@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/androidDemo" />
             <option value="$PROJECT_DIR$/androidDemo2" />
             <option value="$PROJECT_DIR$/javaDemo" />
+            <option value="$PROJECT_DIR$/ktDemo" />
           </set>
         </option>
       </GradleProjectSettings>

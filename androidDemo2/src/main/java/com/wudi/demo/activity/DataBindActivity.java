@@ -1,15 +1,16 @@
 package com.wudi.demo.activity;
 
-import android.content.Intent;
-
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wudi.demo.R;
 import com.wudi.demo.base.BaseActivity;
 import com.wudi.demo.bean.User;
+import com.wudi.demo.config.RouteConst;
 import com.wudi.demo.databinding.ActivityMainBinding;
 
 /**
  * @author di23.wu
  */
+@Route(path = RouteConst.PATH_TWO_TEST)
 public class DataBindActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override

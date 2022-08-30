@@ -5,7 +5,9 @@ import android.view.KeyEvent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wudi.demo.R;
+import com.wudi.demo.config.RouteConst;
 import com.wudi.demo.template.Singleton;
 
 /**
@@ -13,6 +15,7 @@ import com.wudi.demo.template.Singleton;
  * @desc
  * @time 2022-07-19 14:35
  */
+@Route(path = RouteConst.APP_TEST)
 public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

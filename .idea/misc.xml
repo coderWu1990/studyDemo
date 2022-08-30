@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/drawable/cursor_color.xml" value="0.1015" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/layout/aaa_test_view.xml" value="0.14427083333333332" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/layout/activity_animation.xml" value="0.14427083333333332" />
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/layout/activity_target.xml" value="0.10833333333333334" />
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo/src/main/res/layout/activity_view.xml" value="0.1" />
@@ -12,6 +14,11 @@
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo2/src/main/res/layout/activity_second.xml" value="0.4041666666666667" />
         <entry key="..\:/Android/WorkPlace/studyDemo/androidDemo2/src/main/res/layout/activity_ssid.xml" value="0.21458333333333332" />
         <entry key="..\:/Android/WorkPlace/studyDemo/jetpackdemo/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/ktDemo/src/main/res/layout/activity_main.xml" value="0.26510416666666664" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/routertest/src/main/res/layout/activity_main.xml" value="0.14427083333333332" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/routertest/src/main/res/layout/activity_second.xml" value="0.14427083333333332" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/test/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/WorkPlace/studyDemo/test/src/main/res/layout/activity_second.xml" value="0.2869791666666667" />
       </map>
     </option>
   </component>

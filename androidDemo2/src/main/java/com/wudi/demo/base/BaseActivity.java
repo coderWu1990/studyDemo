@@ -12,6 +12,8 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.alibaba.android.arouter.launcher.ARouter;
+
 /**
  * @author wudi
  * @desc 基类
@@ -24,6 +26,7 @@ public abstract class BaseActivity<V extends ViewDataBinding> extends AppCompatA
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        ARouter.getInstance().inject(this);
         binding = DataBindingUtil.setContentView(this, getLayoutId());
         setActivityOrientation();
         binding.setLifecycleOwner(this);
