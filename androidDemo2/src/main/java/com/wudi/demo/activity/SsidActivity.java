@@ -1,6 +1,8 @@
 package com.wudi.demo.activity;
 
 import android.content.Intent;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 
 import androidx.lifecycle.Observer;
@@ -26,6 +28,21 @@ public class SsidActivity extends BaseActivity<ActivitySsidBinding> {
     @Override
     protected void initBinding() {
         binding.tvSsid.setText("初始值");
+        binding.edtName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
     }
 
     @Override
