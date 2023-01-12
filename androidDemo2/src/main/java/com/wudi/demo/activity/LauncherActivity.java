@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.wudi.demo.config.RouteConst;
+import com.wudi.demo.utils.DnsUtils;
 
 /**
  * @author wudi
@@ -20,6 +21,8 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        startActivity(new Intent(this,SsidActivity.class));
 
-        ARouter.getInstance().build(RouteConst.APP_TEST).navigation();
+//        ARouter.getInstance().build(RouteConst.APP_TEST).navigation();
+        DnsUtils.testDns();
     }
+
 }
