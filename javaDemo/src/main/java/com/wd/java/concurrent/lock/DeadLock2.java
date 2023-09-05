@@ -13,6 +13,11 @@ public class DeadLock2 {
         t1.setName("thread-dufy-1");
         t2.setName("thread-dufy-2");
         t1.start();//启动一个线程
+        try {
+            Thread.sleep(20);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         t2.start();//启动另一个线程
     }
 }
@@ -21,6 +26,7 @@ class DeadLockTest implements Runnable {
     DeadLockTest(boolean falg) {
         this.falg = falg;
     }
+    @Override
     public void run() {
         /**
          * 如果falg的值为true则调用t1线程

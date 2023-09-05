@@ -15,5 +15,7 @@ public class TestClient {
 
         System.out.println(TimeUtil.getGapTime(8000000));
         System.out.println(TimeUtil.getGapTime2(8000000));
+        int a=-450%360;
+        System.out.println("a="+a);
     }
 }
