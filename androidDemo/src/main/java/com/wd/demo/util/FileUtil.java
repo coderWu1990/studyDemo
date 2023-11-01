@@ -1,5 +1,6 @@
 package com.wd.demo.util;
 
+import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
@@ -117,5 +118,23 @@ public class FileUtil {
         // 写入文件
         outStream.write(content.getBytes());
         outStream.close();
+    }
+
+    /**
+     * 保存数据到文件
+     * @param context
+     * @param bytes 自己流数据
+     */
+    public void saveDataToFile(Context context, byte[] bytes) {
+        try {
+            File file = new File(context.getFilesDir() + "/12.pcm");
+            Log.i("test", "file=" + file.getPath());
+            FileOutputStream outStream = new FileOutputStream(file);
+            // 写入文件
+            outStream.write(bytes);
+            outStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
