@@ -46,8 +46,8 @@ public class SinglePool {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println(Thread.currentThread()+""+Thread.currentThread().getName());
-			super.run();
+			System.out.println(Thread.currentThread().getName()+"当前线程id="+Thread.currentThread().getId()+" 运行开始");
+//			super.run();
 		}
 	}
 

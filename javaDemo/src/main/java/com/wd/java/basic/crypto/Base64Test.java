@@ -1,7 +1,5 @@
 package com.wd.java.basic.crypto;
 
-import com.wd.java.utils.ByteUtil;
-
 import java.util.Base64;
 
 /**
@@ -22,7 +20,13 @@ public class Base64Test {
         //        System.out.println("解密："+ new String(Base64.getDecoder().decode(str3)));
         //解压缩
         byte[] data = QuickLZUtils.decompress(Base64.getDecoder().decode(str3));
+
 //        System.out.println("解压缩："+ ByteUtil.bytesToHexString(data));
         System.out.println("解压缩：" + new String(data));
+
+
+        String base64 = "eyJuYW1lIjoi5p2O5ZubIiwicGhvbmVOdW1iZXIiOiIxODY2NjY2NjY2NiJ9LAp7Im5hbWUiOiLlvKDkuIkiLCJwaG9uZU51bWJlciI6IjE4NjY2NjY2NjY2In0=";
+        String result = new String(Base64.getDecoder().decode(base64));
+        System.out.println("result=" + result);
     }
 }
